@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <div class="navbar-logo"></div>
+            My Website
+        </a>
+        <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>User Profile</h1>
+        <section class="card-container">
+            <div class="card">
+                <h2>Personal Information</h2>
+                <p>Name: John Doe</p>
+                <p>Email: john@example.com</p>
+                <p>Location: New York, USA</p>
+            </div>
+            <div class="card">
+                <h2>Bio</h2>
+                <p>This is a brief biography about John Doe. He likes long walks on the beach and coding.</p>
+            </div>
+            <div class="card">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Hiking</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+

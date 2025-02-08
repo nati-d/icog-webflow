@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interview at iCog - My Experience</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Me
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <div class="navbar-logo"></div>
+            My Tech Journey
+        </a>
+        <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>My iCog Interview Experience</h1>
+        <p>Stepping into the iCog interview was a challenge that pushed my knowledge across multiple domains. Here’s a breakdown of the topics I tackled:</p>
+        
+        <section class="card-container">
+            <div class="card">
+                <h2>Front-End Development</h2>
+                <p>The interviewer asked about responsive design, optimizing web performance, and structuring components efficiently. I discussed my experience with React, CSS best practices, and accessibility improvements.</p>
+            </div>
+            <div class="card">
+                <h2>Back-End Engineering</h2>
+                <p>We dove into API design, authentication strategies (JWT & OAuth), and database optimization. I shared insights on building scalable Django applications and using indexing in SQL for performance.</p>
+            </div>
+            <div class="card">
+                <h2>Machine Learning</h2>
+                <p>They quizzed me on model selection, feature engineering, and the trade-offs between bias and variance. I explained my understanding of supervised vs. unsupervised learning and real-world ML applications.</p>
+            </div>
+            <div class="card">
+                <h2>Graph Traversal & DSA</h2>
+                <p>One of the toughest parts! I was given a problem requiring BFS and DFS, testing my ability to choose the right algorithm. I tackled it using Python and optimized the solution for efficiency.</p>
+            </div>
+        </section>
+
+        <h2>Final Thoughts</h2>
+        <p>The experience was intense but rewarding. Each question made me reflect on my strengths and areas to improve. Whether or not I land the role, this interview has fueled my passion for problem-solving even more!</p>
+    </main>
+
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
